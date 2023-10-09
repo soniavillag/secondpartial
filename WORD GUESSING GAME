@@ -1,0 +1,33 @@
+https://replit.com/join/gvjiumrecu-soniavillanueva
+
+#Create a word-guessing game. 
+#Choose a secret word and allow the user to guess one letter at a time. 
+#If they guess a correct letter, fill in the blanks in the word. 
+#Repeat until the word is guessed or a certain number of incorrect guesses are made.
+"""
+STEPS FOR MY CODE: 
+1-limit the attempts to 3 or the word is guessed
+2- write in the blanks for the secret word = pozole
+3- make the user guess one at a time
+"""
+number_attempts = 0
+while number_attempts < 3: 
+  number_attempts +=1
+  print("This is your attempt", number_attempts)
+  print("Remember you have 3 attempts only")
+  print("_ _ _ _ _ _")
+  first = input("Write your first guess: ")
+  word = ["p", "o"]
+  if first in word:
+    print("your first attempt is correct: ", first)
+    your_word = [first, ""]
+    print("Your word so far:", your_word)
+    second = input("Write your second guess: ")
+    if second in word: 
+      print("Your second attempt is correct: ", second)
+      your_word = [first, second]
+      print("Your word so far:", your_word) 
+      print("Congratulations!, the word is PO")
+      number_attempts = 100
+  else:
+    print("That's incorrect, try again")
