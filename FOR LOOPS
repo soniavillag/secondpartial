@@ -1,0 +1,21 @@
+https://replit.com/join/ijanalmrcn-soniavillanueva
+
+print("print numbers from 1 to 10")
+
+for i in range(1,11):
+  print(i)
+
+
+print("analyze if shopping list has apples")
+
+shopping = ["apple", "pineapple", "potato"]
+question = input("do you want to add something to your shopping list?: ")
+if question == "yes":
+  new_item = input("what do you want to add?")
+  shopping.append(new_item)
+
+print(shopping)
+
+for item in shopping:
+  if item == "apple":
+    print("oh great, your shopping list has apples")
