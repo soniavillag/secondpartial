@@ -1,0 +1,14 @@
+https://replit.com/join/bzhyjxyjcm-soniavillanueva
+
+temperature = int(input("What's the temperature? "))
+raining = not True 
+cold = temperature <15
+
+if raining and cold:
+  print("you should bring a jacket and an umbrella")
+elif raining:
+  print("only bring an umbrella")
+elif cold: 
+  print("only bring a jacket")
+else:
+  print("do nothing")
