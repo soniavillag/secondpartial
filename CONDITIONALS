@@ -1,0 +1,15 @@
+https://replit.com/join/edwactnkwr-soniavillanueva
+
+condition2 = input("Is Mario there?")
+condition = input ("Is Luigi there?")
+condition3 = input("Is Peach there?")
+
+
+if condition == "yes":
+  print("Go, Luigi! You can pass :D")
+elif condition2 == "yes":
+  print("KILL!")
+elif condition3 == "yes":
+  print("Kill Peach :D")
+else:
+  print("Do nothing, be happy.")
