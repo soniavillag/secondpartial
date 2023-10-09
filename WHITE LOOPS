@@ -1,0 +1,9 @@
+https://replit.com/join/xitkhdfbtl-soniavillanueva
+
+condition = input("Is Snorlax in our way?")
+
+while condition == "yes":
+  print ("You cannot pass.")
+  condition = input("Is Snorlax still in our way?")
+
+print("You can pass now :D")
