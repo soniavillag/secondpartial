@@ -1,0 +1,19 @@
+https://replit.com/join/nqzdaxxgec-soniavillanueva
+
+emotion = input ("Hello there! How are you feeling, sad, happy or angry? ")
+
+if emotion == "sad":
+  question = input ("Why are you sad? ")
+  if question == "idk":
+    print("Oh no, I'm so sorry to hear that, let's do something fun to make you happy")
+elif emotion == "happy":
+    question = input ("Why are you happy? ")
+    if question == "because it's a beautiful day!": 
+      print("OMG!, It is very pretty indeed :D")
+elif emotion == "angry":
+  question = input ("Why are you angry? ")
+  if question == "I got a bad grade at school":
+    print("Oh, I'm so sorry, maybe you can practice some breathwork to feel better")
+else:
+  print ("Please enter a valid answer for me to be able to talk to you")
+      
