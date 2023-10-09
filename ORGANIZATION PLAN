@@ -1,0 +1,31 @@
+https://replit.com/join/ppgxmuoofo-soniavillanueva
+
+"""
+Code for the organization of the study 
+STEPS:
+  1. Make the function to get the name of the subject and the time the person will dedicate to it 
+  2. Ask the user the number of subjects that they are taking
+  3. Create two lists (one for the times and one for the names) for each subject 
+  4. Create a for loop to ask the user for the subject and store it in my two lists 
+  5. Display the result using a for loop, which will print 
+"""
+
+def subject(): #This function asks for the name and time 
+  name = input("Please tell me the name of the subject: ")
+  time = int(input("How many hours will you dedicate to that subject?: "))
+  time_minutes = time * 60
+  time_day = time_minutes / 5
+  return name, time_day 
+number_subjects = int(input("How many subjects do you have?: "))
+names = [] #I am creating an empty list to store the results of the names the user enters
+times = [] #Same as the last, but now for the times 
+
+for _ in range(number_subjects):
+  name, time = subject()
+  names.append(name)
+  times.append(time)
+  print(names)
+for i in range(len(names)):
+  name = names [i]
+  time = times[i]
+  print("For", name, "study", time, "minutes per day")
