@@ -1,0 +1,53 @@
+replit link: https://replit.com/join/juwjwytowb-soniavillanueva
+
+"""
+Create a Python program that formulates questions related to mental health.
+Your program should provide recommendations for improving mental health based on the
+questions.
+Ensure that your code is well-structured and follows PEP8 coding conventions.
+Please use AND and OR operators in your code.
+
+
+STEPS:
+1. Create a program that formulates questions related to mental health.
+2. Provide recommendations for improving mental health.
+3. FolloW the PEP8.
+4. Use AND and OR operations.
+
+"""
+
+introduction = input("Hello there!, how are you? ")
+if introduction == "good":
+  print("I'm glad to hear that")
+
+elif introduction == "bad":
+  print("Oh, I'm so sorry to hear that")
+
+else: 
+  print("Please enter a valid answer for me to be able to talk to you :D")
+
+emotion = input("Have you been struggling with your mental health lately? ")
+
+if emotion == "no":
+  print("I'm so happy to hear that. That's super good!")
+
+elif emotion == "yes":
+  print("Have you been experiencing extra tiredness and no enthusiasm at all?")
+  tiredness = input()
+  if tiredness == "yes":
+    print("Would you like me to give you a few recommendations to feel better?")
+    recommendations = input()
+  if recommendations == "yes":
+    print("Okay, some things you can do are the following:")
+    print("1. Take a break and let your mind rest to reduce stress.")
+    print("2. Spend some time in nature.")
+    print("3. Try some meditation.")
+    print("4. Make time for exercise.")
+    print("5. Eat tasty and nutritious meals.")
+
+  elif recommendations == "no":
+    print("Okay, let's talk about it later.")
+
+  else:
+    print("Please enter a valid answer for me to be able to talk to you :D")
+    
