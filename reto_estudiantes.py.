@@ -1,0 +1,36 @@
+link to replit: https://replit.com/join/lyrjyjbnzm-soniavillanueva
+
+"""
+
+STEPS:
+1. Create a Python program to evaluate online purchases.
+2. Ask the user to enter the purchase amount and if it is greater than $100 add a 10%. 
+3. Ask the user for an applied discount.
+4. Ask the user if they have a membership card if yes, then all an extra 5% discount. 
+5. Remember to explain to the user why they are receiving their corresponding discounts.
+
+"""
+
+product_price = float(input("Enter the product price: "))
+if product_price > 100:
+  new_product_price = product_price - (product_price*10/100)
+  print("Since you payed more than $100 you get a 10% discount.")
+  print("The amount you gotta pay now after the 10% discount is: ", new_product_price)
+
+elif product_price < 100:
+  print("Since you payed less than $100 you do not get a discount.")
+
+else:
+  print("Please enter a valid answer for me to be able to work.")
+
+member_card = input("Do you have a membership card? (yes/no): ")
+if member_card == "yes":
+  print("Perfect! You get an extra 5% discount :D")
+  member_price = new_product_price - (new_product_price*5/100)
+  print("The amount you gotta pay now after the extra 5% discount is:  ", member_price)
+
+elif member_card == "no":
+  print("That's a shame, you could have gotten an extra 5% discount if you did :O")
+
+else:
+  print("Please enter a valid answer for me to be able to work.")
