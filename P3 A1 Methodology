@@ -1,0 +1,25 @@
+sick = input("Hi!, are you sick? ")
+
+if sick == "yes":
+  print("Oh I'm sorry to hear that.")
+
+elif sick == "no":
+  print("That's good!, I'm glad :D")
+
+sickness = input("Do you have a flu, a stomach ache or a headache? ")
+
+if sickness == "flu":
+  print("You should rest and drink some ginger tea with lemon and honey")
+
+elif sickness == "stomach ache":
+  print("You should drink some green tea, and take a warm bath.")
+
+elif sickness =="headache":
+  print("You should drink some clove tea and but your feet in some hot water.")
+
+goodbye = input ("Were these tips helpful? ")
+if goodbye == "yes":
+  print("Yayyy!")
+
+elif goodbye == "no":
+  print(":O")
